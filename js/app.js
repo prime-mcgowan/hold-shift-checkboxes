@@ -1,5 +1,7 @@
+//selects all the checkboxes
 const checkboxes = document.querySelectorAll('.inbox input[type="checkbox"]');
 
+//creates
 let lastChecked;
 
 function handleCheck(e) {
@@ -12,6 +14,7 @@ function handleCheck(e) {
     //loop over every single checkbox
     checkboxes.forEach((checkbox) => {
       console.log(checkbox);
+      //checkbox that triggered the clickevent || last box checked
       if (checkbox === this || checkbox === lastChecked) {
         inBetween = !inBetween;
         console.log("Starting to check inbetween");
